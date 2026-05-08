@@ -1,0 +1,60 @@
+:root {
+    --primary: #ef4444;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    cursor: crosshair; /* Sentuhan kalcer */
+}
+
+/* Glassmorphism */
+.glass-login {
+    background: rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(20px);
+}
+
+.glass {
+    background: rgba(10, 10, 10, 0.8);
+    backdrop-filter: blur(15px);
+}
+
+/* Aesthetic Backgrounds */
+.login-bg-aesthetic {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(239,68,68,0.15) 0%, rgba(0,0,0,0) 70%);
+    filter: blur(60px);
+    z-index: 0;
+    animation: pulse 8s infinite alternate;
+}
+
+.dreamy-gradient {
+    background: radial-gradient(circle at top right, #1a1a1a, #0a0a0a);
+}
+
+/* Animations */
+@keyframes pulse {
+    from { transform: scale(1); opacity: 0.5; }
+    to { transform: scale(1.5); opacity: 0.8; }
+}
+
+.cart-bounce {
+    animation: bounce 3s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.spider-web {
+    position: absolute;
+    pointer-events: none;
+    color: rgba(255, 255, 255, 0.05);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #0a0a0a; }
+::-webkit-scrollbar-thumb { background: #333; border-radius: 10px; }
